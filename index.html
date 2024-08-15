@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Feedback Survey form</h1>
+        <form id="servey-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="18" max="150" required><br>
+            <label for="feedback-type">Type of Feedback</label><br>
+            <select id="feedback-type" name="feedback-type">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+            <fieldset>
+                <legend>Services Used</legend>
+                <input type="checkbox" id="service1" name="services" value="service1">
+                <label for="service1">Warranty Claim</label>
+
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">Exchange</label>
+
+                <input type="checkbox" id="service3" name="services" value="service3">
+                <label for="service3">Repair</label>
+            </fieldset>
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+</html>
